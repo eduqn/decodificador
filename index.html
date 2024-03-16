@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="\style\style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <video background autoplay loop muted poster="/assets/security.png" class="bg_video">
+        <source src="./assets/cyber-security.mp4" type="video/mp4">
+    </video>
+    <header class="cabecalho">
+        <img class="logoAlura" src="./assets/alura.png" alt="Logo Alura">
+    </header>
+    <h1 class="titulo">Decodificador de Mensagem</h1>
+    <main class="main">
+            <section>
+                <textarea class="text-area" cols="41" rows="12" placeholder="Digite seu texto"></textarea>
+                
+                <div class="informacao">
+                    <h6>* Apenas letras minúsculas e sem acento</h6>   
+                </div>
+                <div class="botoes">
+                    <button class="btn-criptografar" onclick="btnEncriptar(), myFunction()">Criptografar</button>
+                    <button class="btn-descriptografar" onclick="btnDescriptar()">Descriptografar</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <textarea id="mensagem" class="mensagem" cols="50" rows="15"></textarea>
+                </div>
+                <div class="botoes">
+                    <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+                
+                
+            </section>
+            
+    </main>
+    
+        <footer class="rodape">
+        <h1>Desenvolvido por @Eduardo Nascimento</h1>
+        <h2>Manaus-AM / 2024</h2>
+        </footer>
+    <script src="script.js"></script>    
+</body>
+</html>
